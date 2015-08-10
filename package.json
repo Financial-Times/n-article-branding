@@ -1,6 +1,6 @@
 {
-  "name": "ft-next-article-branding",
-  "version": "0.0.0",
+  "name": "ft-n-article-branding",
+  "version": "1.0.0",
   "main": "main.js",
   "devDependencies": {
     "chai": "^3.2.0",
