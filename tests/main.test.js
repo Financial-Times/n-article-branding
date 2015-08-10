@@ -39,8 +39,8 @@ var fixtures = {
 						}
 					]
 				}
-			}	
-		]	
+			}
+		]
 	},
 	hasBrandAndColumnist: {
 		brand: [{
@@ -67,8 +67,8 @@ var fixtures = {
 						}
 					]
 				}
-			}	
-		]	
+			}
+		]
 	},
 	hasNoBrandOrColumnist: {}
 };
