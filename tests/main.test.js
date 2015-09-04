@@ -70,7 +70,17 @@ var fixtures = {
 			}
 		]
 	},
-	hasNoBrandOrColumnist: {}
+	hasNoBrandOrColumnist: {},
+	hasNoAttributes: {
+		tags: [
+			{
+				term: {
+					name: 'Bobby Davro',
+					taxonomy: 'people'
+				}
+			}
+		]
+	}
 };
 
 describe('Branding', function () {
@@ -88,5 +98,9 @@ describe('Branding', function () {
 
 	it('should return null if no brand or columnist is present', function() {
 		should.not.exist(getBranding(fixtures.hasNoBrandOrColumnist));
+	});
+
+	it('should return null if a tag has no attributes', function() {
+		should.not.exist(getBranding(fixtures.hasNoAttributes));
 	});
 });
