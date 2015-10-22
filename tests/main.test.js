@@ -1,10 +1,11 @@
 /*global describe, it*/
+/*eslint strict:0*/
 'use strict';
 
-var should = require('chai').should();
-var getBranding = require('../main');
+const should = require('chai').should();
+const getBranding = require('../main');
 
-var fixtures = {
+const fixtures = {
 	hasBrand: {
 		brand: [{
 			term: {
