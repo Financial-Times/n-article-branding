@@ -1,4 +1,7 @@
 /*global describe, it*/
+/*eslint strict:0*/
+'use strict';
+
 const should = require('chai').should();
 const getBranding = require('../main');
 
