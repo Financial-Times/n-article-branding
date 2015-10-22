@@ -1,3 +1,6 @@
+/*eslint strict:0*/
+'use strict';
+
 // Gets branding for an article.
 // Branding can either be an article brand or a columnist
 module.exports = function(metadata) {
