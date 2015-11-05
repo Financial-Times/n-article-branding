@@ -1,0 +1,22 @@
+[
+  {
+    "id": "Q0ItMDAwMDg0MA==-QXV0aG9ycw==",
+    "name": "John Gapper",
+    "url": "/stream/authorsId/Q0ItMDAwMDg0MA==-QXV0aG9ycw==",
+    "idV1": "Q0ItMDAwMDg0MA==-QXV0aG9ycw==",
+    "prefLabel": "Tanya Powley",
+    "taxonomy": "authors",
+    "primary": true,
+    "attributes": []
+  },
+  {
+    "id": "OA==-R2VucmVz",
+    "name": "Comment",
+    "url": "/stream/genreId/OA==-R2VucmVz",
+    "idV1": "OA==-R2VucmVz",
+    "prefLabel": "Comment",
+    "taxonomy": "genre",
+    "primary": false,
+    "attributes": []
+  }
+]

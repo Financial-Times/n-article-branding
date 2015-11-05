@@ -5,6 +5,6 @@ verify:
 	obt verify
 
 unit-test:
-	mocha tests
+	mocha tests/*
 
 test: verify unit-test

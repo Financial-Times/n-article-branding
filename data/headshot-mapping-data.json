@@ -1,0 +1,148 @@
+{
+  "authors": [
+    {"id": "Q0ItMDAwMDkxOQ==-QXV0aG9ycw==",
+      "name": "Andrew Hill",
+      "attributes": [
+        {"key": "hasHeadshot", "value": true}
+      ]
+    },
+    {"name": "David Tang",
+      "id": "Q0ItMDAwMDQ1NQ==-QXV0aG9ycw==",
+      "attributes": [
+        {"key": "hasHeadshot", "value": true}
+      ]
+    },
+    {"name": "Edward Luce",
+      "id": "Q0ItMDAwMDgwNQ==-QXV0aG9ycw==",
+      "attributes": [
+        {"key": "hasHeadshot", "value": true}
+      ]
+    },
+    {"name": "Gideon Rachman",
+      "id": "Q0ItMDAwMDkyOA==-QXV0aG9ycw==",
+      "attributes": [
+        {"key": "hasHeadshot", "value": true}
+      ]
+    },
+    {"name": "Gillian Tett",
+      "id": "Q0ItMDAwMDg3NA==-QXV0aG9ycw==",
+      "attributes": [
+        {"key": "hasHeadshot", "value": true}
+      ]
+    },
+    {"name": "Janan Ganesh",
+      "id": "Q0ItMDAxNzEwNg==-QXV0aG9ycw==",
+      "attributes": [
+        {"key": "hasHeadshot", "value": true}
+      ]
+    },
+    {"name": "Jancis Robinson",
+      "id": "Q0ItMDAwMDI2Mw==-QXV0aG9ycw==",
+      "attributes": [
+        {"key": "hasHeadshot", "value": true}
+      ]
+    },
+    {"name": "Jo Ellison",
+      "id": "Q0ItMDI1MTU5Mw==-QXV0aG9ycw==",
+      "attributes": [
+        {"key": "hasHeadshot", "value": true}
+      ]
+    },
+    {"name": "John Authers",
+      "id": "Q0ItMDAwMDkyMw==-QXV0aG9ycw==",
+      "attributes": [
+        {"key": "hasHeadshot", "value": true}
+      ]
+    },
+    {"name": "John Gapper",
+      "id": "Q0ItMDAwMDc1Mw==-QXV0aG9ycw==",
+      "attributes": [
+        {"key": "hasHeadshot", "value": true}
+      ]
+    },
+    {"name": "Lisa Pollack",
+      "id": "Q0ItMDAwMTY5Nw==-QXV0aG9ycw==",
+      "attributes": [
+        {"key": "hasHeadshot", "value": true}
+      ]
+    },
+    {"name": "Lucy Kellaway",
+      "id": "Q0ItMDAwMDkyNg==-QXV0aG9ycw==",
+      "attributes": [
+        {"key": "hasHeadshot", "value": true}
+      ]
+    },
+    {"name": "Martin Wolf",
+      "id": "Q0ItMDAwMDkwMA==-QXV0aG9ycw==",
+      "attributes": [
+        {"key": "hasHeadshot", "value": true}
+      ]
+    },
+    {"name": "Merryn Somerset Webb",
+      "id": "Q0ItMDAwMDQwMw==-QXV0aG9ycw==",
+      "attributes": [
+        {"key": "hasHeadshot", "value": true}
+      ]
+    },
+    {"name": "Michael Skapinker",
+      "id": "Q0ItMDMxODc0Mw==-QXV0aG9ycw==",
+      "attributes": [
+        {"key": "hasHeadshot", "value": true}
+      ]
+    },
+    {"name": "Philip Stephens",
+      "id": "Q0ItMDAwMDkyOQ==-QXV0aG9ycw==",
+      "attributes": [
+        {"key": "hasHeadshot", "value": true}
+      ]
+    },
+    {"name": "Robert Shrimsley",
+      "id": "Q0ItMDAwMDkyMQ==-QXV0aG9ycw==",
+      "attributes": [
+        {"key": "hasHeadshot", "value": true}
+      ]
+    },
+    {"name": "Robin Lane Fox",
+      "id": "Q0ItMDAwMDY2MA==-QXV0aG9ycw==",
+      "attributes": [
+        {"key": "hasHeadshot", "value": true}
+      ]
+    },
+    {"name": "Roula Khalaf",
+      "id": "Q0ItMDAwMDc5NQ==-QXV0aG9ycw==",
+      "attributes": [
+        {"key": "hasHeadshot", "value": true}
+      ]
+    },
+    {"name": "Rowley Leigh",
+      "id": "Q0ItMDAwMDI5Ng==-QXV0aG9ycw==",
+      "attributes": [
+        {"key": "hasHeadshot", "value": true}
+      ]
+    },
+    {"name": "Simon Kuper",
+      "id": "Q0ItMDAwMDI2Ng==-QXV0aG9ycw==",
+      "attributes": [
+        {"key": "hasHeadshot", "value": true}
+      ]
+    },
+    {"name": "Susie Boyt",
+      "id": "Q0ItMDAwMDI5OQ==-QXV0aG9ycw==",
+      "attributes": [
+        {"key": "hasHeadshot", "value": true}
+      ]
+    },
+    {"name": "Tyler Brûlé",
+      "id": "Q0ItMDAwMDI2NA==-QXV0aG9ycw==",
+      "attributes": [
+        {"key": "hasHeadshot", "value": true}
+      ]
+    },
+    {"name": "Wolfgang Münchau",
+      "id": "Q0ItMDAwMTMyMg==-QXV0aG9ycw==",
+      "attributes": [
+        {"key": "hasHeadshot", "value": true}
+      ]
+    }
+  ]
+}

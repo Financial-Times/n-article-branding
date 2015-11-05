@@ -1,0 +1,20 @@
+[
+  {
+    "id": "QnJhbmRzXzEwNA==-QnJhbmRz",
+    "name": "Lombard",
+    "url": "/stream/brandId/QnJhbmRzXzEwNA==-QnJhbmRz",
+    "idV1": "QnJhbmRzXzEwNA==-QnJhbmRz",
+    "prefLabel": "Lombard",
+    "taxonomy": "brand",
+    "attributes": []
+  },
+  {
+    "id": "OA==-R2VucmVz",
+    "name": "Comment",
+    "url": "/stream/genreId/OA==-R2VucmVz",
+    "idV1": "OA==-R2VucmVz",
+    "prefLabel": "Comment",
+    "taxonomy": "genre",
+    "attributes": []
+  }
+]
