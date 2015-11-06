@@ -1,13 +1,10 @@
 {
-  "id": "Q0ItMDAwMDc1Mw==-QXV0aG9ycw==",
-  "name": "John Gapper",
-  "url": "/stream/authorsId/Q0ItMDAwMDc1Mw==-QXV0aG9ycw==",
-  "idV1": "Q0ItMDAwMDc1Mw==-QXV0aG9ycw==",
-  "prefLabel": "John Gapper",
+  "idV1": "Q0ItMDAwMTMyMg==-QXV0aG9ycw==",
+  "prefLabel": "Wolfgang Münchau Webb",
   "taxonomy": "authors",
-  "primary": true,
+  "primary": "theme",
   "attributes": [
     {"key": "hasHeadshot", "value": true}
   ],
-  "headshot": "https://image.webservices.ft.com/v1/images/raw/fthead:john-gapper"
+  "headshot": "https://image.webservices.ft.com/v1/images/raw/fthead:wolfgang-munchau-webb"
 }
