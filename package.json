@@ -2,6 +2,9 @@
   "name": "ft-n-article-branding",
   "version": "3.0.0",
   "main": "main.js",
+  "dependencies": {
+    "diacritics": "^1.2.3"
+  },
   "devDependencies": {
     "chai": "^3.2.0",
     "mocha": "^2.2.5",

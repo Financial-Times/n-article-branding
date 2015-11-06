@@ -1,6 +1,7 @@
 /*eslint strict:0*/
 'use strict';
 
+const removeDiacritics = require('diacritics').remove;
 const checkForHeadshotAttribute = require('./mappings/headshot-mapping');
 
 function isABrand(metadata) {
@@ -19,7 +20,8 @@ function isGenreComment(metadata) {
 }
 
 function headshotUrl(tag) {
-	return `https://image.webservices.ft.com/v1/images/raw/fthead:${tag.prefLabel.toLowerCase().replace(' ', '-')}`;
+	const fileName = removeDiacritics(tag.prefLabel).toLowerCase().replace(/\s+/g,'-');
+	return `https://image.webservices.ft.com/v1/images/raw/fthead:${fileName}`;
 }
 
 module.exports = function (metadata) {
