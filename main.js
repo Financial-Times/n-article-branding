@@ -1,31 +1,43 @@
 /*eslint strict:0*/
 'use strict';
 
-// Gets branding for an article.
-// Branding can either be an article brand or a columnist
-module.exports = function(metadata) {
-	if (!metadata) {
-		return;
-	}
-	let brandingToUse = {};
-	let columnists = [];
+const checkForHeadshotAttribute = require('./mappings/headshot-mapping');
 
-	if (metadata.tags) {
-		columnists = metadata.tags.map(function(tag) {
-			const attrs = tag.term.attributes;
-			return (attrs && attrs.length && attrs[0].key === 'isColumnist' && attrs[0].value === true) ? tag : null;
-		})
-		.filter(function(e) { return e; }); // Clean out falsy vals from the array
-	}
+function isABrand(metadata) {
+	return metadata.find(tag => tag.taxonomy === 'brand');
+}
 
-	if (metadata.brand && metadata.brand[0]) {
-		brandingToUse = metadata.brand[0];
-	}
+function isAnAuthor(metadata) {
+	return metadata.find(tag => tag.taxonomy === 'authors');
+}
 
-	// Columnists trump brands
-	if (columnists.length) {
-		brandingToUse = columnists[0];
-	}
+function isGenreComment(metadata) {
+	return metadata.find(tag =>
+		tag.taxonomy === 'genre' &&
+		tag.prefLabel === 'Comment'
+	);
+}
 
-	return brandingToUse.term || null;
+function headshotUrl(tag) {
+	return `https://image.webservices.ft.com/v1/images/raw/fthead:${tag.prefLabel.toLowerCase().replace(' ', '-')}`;
+}
+
+module.exports = function (metadata) {
+	let matchedTag = isABrand(metadata);
+	if (
+		!matchedTag &&
+		isAnAuthor(metadata) &&
+		isGenreComment(metadata)
+	) {
+		matchedTag = isAnAuthor(metadata);
+		checkForHeadshotAttribute(matchedTag);
+	}
+	if (matchedTag &&
+			matchedTag.taxonomy === 'authors' &&
+			matchedTag.attributes &&
+			matchedTag.attributes.find(attribute => attribute.key === 'hasHeadshot')
+	) {
+		matchedTag.headshot = headshotUrl(matchedTag);
+	}
+	return matchedTag || null;
 };

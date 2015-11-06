@@ -5,103 +5,35 @@
 const should = require('chai').should();
 const getBranding = require('../main');
 
-const fixtures = {
-	hasBrand: {
-		brand: [{
-			term: {
-				name: 'Lex',
-			}
-		}],
-		tags: [{
-			term: {
-				name: 'Bobby Davro',
-				taxonomy: 'people',
-				attributes: []
-			}
-		}]
-	},
-	hasColumnist: {
-		tags: [
-			{
-				term: {
-					name: 'Bobby Davro',
-					taxonomy: 'people',
-					attributes: []
-				}
-			},
-			{
-				term: {
-					name: 'Martin Wolf',
-					taxonomy: 'people',
-					attributes: [
-						{
-							value: true,
-							key: 'isColumnist'
-						}
-					]
-				}
-			}
-		]
-	},
-	hasBrandAndColumnist: {
-		brand: [{
-			term: {
-				name: 'Lex',
-			}
-		}],
-		tags: [
-			{
-				term: {
-					name: 'Bobby Davro',
-					taxonomy: 'people',
-					attributes: []
-				}
-			},
-			{
-				term: {
-					name: 'Martin Wolf',
-					taxonomy: 'people',
-					attributes: [
-						{
-							value: true,
-							key: 'isColumnist'
-						}
-					]
-				}
-			}
-		]
-	},
-	hasNoBrandOrColumnist: {},
-	hasNoAttributes: {
-		tags: [
-			{
-				term: {
-					name: 'Bobby Davro',
-					taxonomy: 'people'
-				}
-			}
-		]
-	}
-};
+const brandMetadata = require('./fixtures/metadata/brandMetadata');
+const brandAndColumnistMetadata = require('./fixtures/metadata/brandAndColumnistMetadata');
+const columnistMetadata = require('./fixtures/metadata/columnistMetadata');
+const columnistHasHeadshotMetadata = require('./fixtures/metadata/columnistHasHeadshotMetadata');
+const defaultMetadata = require('./fixtures/metadata/defaultMetadata');
+
+const brand = require('./fixtures/branding/brand');
+const columnist = require('./fixtures/branding/columnist');
+const columnistHeadshot = require('./fixtures/branding/columnistHeadshot');
 
 describe('Branding', function () {
 	it('should set branding to the article brand if present', function() {
-		getBranding(fixtures.hasBrand).should.equal(fixtures.hasBrand.brand[0].term);
+		getBranding(brandMetadata).should.eql(brand);
 	});
 
 	it('should set branding to the article columnist if present', function() {
-		getBranding(fixtures.hasColumnist).should.equal(fixtures.hasColumnist.tags[1].term);
+		getBranding(columnistMetadata).should.eql(columnist);
 	});
 
-	it('should set branding to the columnist if both brand and columnist are present', function() {
-		getBranding(fixtures.hasBrandAndColumnist).should.equal(fixtures.hasBrandAndColumnist.tags[1].term);
+	it('should set branding to the brand if both brand (not equal to author) and columnist are present', function() {
+		getBranding(brandAndColumnistMetadata).should.eql(brand);
+	});
+
+	it('should set a headshot to the branding if a columnist and has hasHeadshot attribute', function () {
+		getBranding(columnistHasHeadshotMetadata).should.eql(columnistHeadshot);
 	});
 
 	it('should return null if no brand or columnist is present', function() {
-		should.not.exist(getBranding(fixtures.hasNoBrandOrColumnist));
+		should.not.exist(getBranding(defaultMetadata));
 	});
 
-	it('should return null if a tag has no attributes', function() {
-		should.not.exist(getBranding(fixtures.hasNoAttributes));
-	});
 });
