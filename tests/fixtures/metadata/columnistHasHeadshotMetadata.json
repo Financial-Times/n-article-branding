@@ -3,7 +3,7 @@
     "idV1": "Q0ItMDAwMTMyMg==-QXV0aG9ycw==",
     "prefLabel": "Wolfgang Münchau Webb",
     "taxonomy": "authors",
-    "primary": "theme",
+    "primary": "brand",
     "attributes": [ ]
   },
   {
@@ -11,7 +11,6 @@
     "idV1": "OA==-R2VucmVz",
     "prefLabel": "Comment",
     "taxonomy": "genre",
-    "primary": false,
     "attributes": []
   }
 ]

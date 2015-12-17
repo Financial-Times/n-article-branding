@@ -6,7 +6,8 @@
     "idV1": "QnJhbmRzXzEwNA==-QnJhbmRz",
     "prefLabel": "Lombard",
     "taxonomy": "brand",
-    "attributes": []
+    "attributes": [],
+    "primary": "brand"
   },
   {
     "id": "OA==-R2VucmVz",
