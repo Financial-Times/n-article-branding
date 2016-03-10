@@ -12,8 +12,26 @@
         {"key": "hasHeadshot", "value": true}
       ]
     },
-    {"name": "Chris Giles",
-      "id": "Q0ItMDAwMDc1OA==-QXV0aG9ycw==",
+    {"id": "Q0ItMDI1OTg3Mw==-QXV0aG9ycw==",
+      "name": "Andrew Smithers",
+      "attributes": [
+        {"key": "hasHeadshot", "value": true}
+      ]
+    },
+    {"id": "Q0ItMDAwMDc2NA==-QXV0aG9ycw==",
+      "name": "Brian Groom",
+      "attributes": [
+        {"key": "hasHeadshot", "value": true}
+      ]
+    },
+    {"id": "Q0ItMDAwMDc1OA==-QXV0aG9ycw==",
+      "name": "Chris Giles",
+      "attributes": [
+        {"key": "hasHeadshot", "value": true}
+      ]
+    },
+    {"id": "Q0ItMDAwMDgzNw==-QXV0aG9ycw==",
+      "name": "David Pilling",
       "attributes": [
         {"key": "hasHeadshot", "value": true}
       ]
@@ -24,8 +42,26 @@
         {"key": "hasHeadshot", "value": true}
       ]
     },
+    {"id": "Q0ItMDAwMDcwNQ==-QXV0aG9ycw==",
+      "name": "Ed Crooks",
+      "attributes": [
+        {"key": "hasHeadshot", "value": true}
+      ]
+    },
     {"name": "Edward Luce",
       "id": "Q0ItMDAwMDgwNQ==-QXV0aG9ycw==",
+      "attributes": [
+        {"key": "hasHeadshot", "value": true}
+      ]
+    },
+    {"id": "Q0ItMDAwMDI1Mg==-QXV0aG9ycw==",
+      "name": "Edwin Heathcote",
+      "attributes": [
+        {"key": "hasHeadshot", "value": true}
+      ]
+    },
+    {"id": "Q0ItMDAwMDgzMA==-QXV0aG9ycw==",
+      "name": "George Parker",
       "attributes": [
         {"key": "hasHeadshot", "value": true}
       ]
@@ -38,6 +74,18 @@
     },
     {"name": "Gillian Tett",
       "id": "Q0ItMDAwMDg3NA==-QXV0aG9ycw==",
+      "attributes": [
+        {"key": "hasHeadshot", "value": true}
+      ]
+    },
+    {"id": "Q0ItMDAwMDc5MQ==-QXV0aG9ycw==",
+      "name": "Izabella Kaminska",
+      "attributes": [
+        {"key": "hasHeadshot", "value": true}
+      ]
+    },
+    {"id": "Q0ItMDAwMTIxOQ==-QXV0aG9ycw==",
+      "name": "Jan Dalley",
       "attributes": [
         {"key": "hasHeadshot", "value": true}
       ]
@@ -66,8 +114,26 @@
         {"key": "hasHeadshot", "value": true}
       ]
     },
+    {"id": "Q0ItSkQ1NDMyMQ==-QXV0aG9ycw==",
+      "name": "John Dizard",
+      "attributes": [
+        {"key": "hasHeadshot", "value": true}
+      ]
+    },
     {"name": "John Gapper",
       "id": "Q0ItMDAwMDc1Mw==-QXV0aG9ycw==",
+      "attributes": [
+        {"key": "hasHeadshot", "value": true}
+      ]
+    },
+    {"id": "Q0ItMDAwMDQyOA==-QXV0aG9ycw==",
+      "name": "Jurek Martin",
+      "attributes": [
+        {"key": "hasHeadshot", "value": true}
+      ]
+    },
+    {"id": "Q0ItMDAwMDY5Nw==-QXV0aG9ycw==",
+      "name": "Kate Burgess",
       "attributes": [
         {"key": "hasHeadshot", "value": true}
       ]
@@ -80,6 +146,12 @@
     },
     {"name": "Lucy Kellaway",
       "id": "Q0ItMDAwMDkyNg==-QXV0aG9ycw==",
+      "attributes": [
+        {"key": "hasHeadshot", "value": true}
+      ]
+    },
+    {"id": "Q0ItMDAwMTgzOA==-QXV0aG9ycw==",
+      "name": "Luke Johnson",
       "attributes": [
         {"key": "hasHeadshot", "value": true}
       ]
@@ -140,6 +212,12 @@
     },
     {"name": "Susie Boyt",
       "id": "Q0ItMDAwMDI5OQ==-QXV0aG9ycw==",
+      "attributes": [
+        {"key": "hasHeadshot", "value": true}
+      ]
+    },
+    {"id": "Q0ItMDAwMTAzNQ==-QXV0aG9ycw==",
+      "name": "Tony Barber",
       "attributes": [
         {"key": "hasHeadshot", "value": true}
       ]
