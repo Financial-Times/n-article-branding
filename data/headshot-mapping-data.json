@@ -1,7 +1,19 @@
 {
   "authors": [
+    {"id": "Q0ItMDAwMDY3Mg==-QXV0aG9ycw==",
+      "name": "Alex Barker",
+      "attributes": [
+        {"key": "hasHeadshot", "value": false}
+      ]
+    },
     {"id": "Q0ItMDAwMDkxOQ==-QXV0aG9ycw==",
       "name": "Andrew Hill",
+      "attributes": [
+        {"key": "hasHeadshot", "value": true}
+      ]
+    },
+    {"name": "Chris Giles",
+      "id": "Q0ItMDAwMDc1OA==-QXV0aG9ycw==",
       "attributes": [
         {"key": "hasHeadshot", "value": true}
       ]
