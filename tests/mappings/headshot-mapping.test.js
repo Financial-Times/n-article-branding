@@ -39,7 +39,7 @@ describe('Mapping author to headshot', function () {
 	});
 
 	it('should not amend a tag which does not have taxonomy of author', function () {
-		(headshotMapping(notAuthorTag))
+		(headshotMapping(notAuthorTag));
     notAuthorTag.attributes.should.be.empty;
 	});
 
