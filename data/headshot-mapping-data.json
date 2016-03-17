@@ -1,15 +1,15 @@
 {
   "authors": [
-    {"id": "Q0ItMDAwMDkxOQ==-QXV0aG9ycw==",
-      "name": "Andrew Hill",
-      "attributes": [
-        {"key": "hasHeadshot", "value": true}
-      ]
-    },
     {"id": "Q0ItMDAwMDY3Mg==-QXV0aG9ycw==",
       "name": "Alex Barber",
       "attributes": [
         {"key": "hasHeadshot", "value": false}
+      ]
+    },
+    {"id": "Q0ItMDAwMDkxOQ==-QXV0aG9ycw==",
+      "name": "Andrew Hill",
+      "attributes": [
+        {"key": "hasHeadshot", "value": true}
       ]
     },
     {"name": "Chris Giles",
