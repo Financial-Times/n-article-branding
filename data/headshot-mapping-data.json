@@ -6,6 +6,18 @@
         {"key": "hasHeadshot", "value": true}
       ]
     },
+    {"id": "Q0ItMDAwMDY3Mg==-QXV0aG9ycw==",
+      "name": "Alex Barber",
+      "attributes": [
+        {"key": "hasHeadshot", "value": false}
+      ]
+    },
+    {"name": "Chris Giles",
+      "id": "Q0ItMDAwMDc1OA==-QXV0aG9ycw==",
+      "attributes": [
+        {"key": "hasHeadshot", "value": true}
+      ]
+    },
     {"name": "David Tang",
       "id": "Q0ItMDAwMDQ1NQ==-QXV0aG9ycw==",
       "attributes": [
