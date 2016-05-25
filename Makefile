@@ -1,8 +1,4 @@
-install:
-	npm install
-
-verify:
-	obt verify
+include n.Makefile
 
 unit-test:
 	mocha tests/*
