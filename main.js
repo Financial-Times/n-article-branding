@@ -20,7 +20,7 @@ function isGenreComment(metadata) {
 }
 
 function headshotUrl(tag) {
-	const fileName = removeDiacritics(tag.prefLabel).toLowerCase().replace(/\s+/g,'-');
+	const fileName = removeDiacritics(tag.prefLabel).toLowerCase().replace(/(\s|')+/g,'-');
 	return `https://next-geebee.ft.com/image/v1/images/raw/fthead:${fileName}`;
 }
 
