@@ -7,7 +7,6 @@ module.exports = function (tag) {
 	}
 
 	const matchedTag = data.authors.find(author => author.id === tag.idV1);
-
 	if (matchedTag) {
 		tag.attributes = tag.attributes.concat(matchedTag.attributes);
 	}

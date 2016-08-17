@@ -4,19 +4,8 @@
 const removeDiacritics = require('diacritics').remove;
 const checkForHeadshotAttribute = require('./mappings/headshot-mapping');
 
-function isABrand(metadata) {
-	return metadata.find(tag => tag.taxonomy === 'brand');
-}
-
-function isAnAuthor(metadata) {
-	return metadata.find(tag => tag.taxonomy === 'authors');
-}
-
-function isGenreComment(metadata) {
-	return metadata.find(tag =>
-		tag.taxonomy === 'genre' &&
-		tag.prefLabel === 'Comment'
-	);
+function getBrandTag(metadata) {
+	return metadata.find(tag => tag.primary === 'brand');
 }
 
 function headshotUrl(tag) {
@@ -25,21 +14,14 @@ function headshotUrl(tag) {
 }
 
 module.exports = function (metadata) {
-	let matchedTag = isABrand(metadata);
-	if (
-		!matchedTag &&
-		isAnAuthor(metadata) &&
-		isGenreComment(metadata)
-	) {
-		matchedTag = isAnAuthor(metadata);
-		checkForHeadshotAttribute(matchedTag);
+	let brandTag = getBrandTag(metadata);
+	if (brandTag && brandTag.taxonomy === 'authors') {
+		checkForHeadshotAttribute(brandTag);
+		if (brandTag.attributes
+				&& brandTag.attributes.find(attribute => attribute.key === 'hasHeadshot')
+		) {
+			brandTag.headshot = headshotUrl(brandTag);
+		}
 	}
-	if (matchedTag &&
-			matchedTag.taxonomy === 'authors' &&
-			matchedTag.attributes &&
-			matchedTag.attributes.find(attribute => attribute.key === 'hasHeadshot')
-	) {
-		matchedTag.headshot = headshotUrl(matchedTag);
-	}
-	return matchedTag || null;
+	return brandTag || null;
 };
