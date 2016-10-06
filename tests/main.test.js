@@ -7,6 +7,7 @@ const getBranding = require('../main');
 
 const brandMetadata = require('./fixtures/metadata/brandMetadata');
 const brandAndColumnistMetadata = require('./fixtures/metadata/brandAndColumnistMetadata');
+const twoColumnistsMetadata = require('./fixtures/metadata/twoColumnistsMetadata');
 const columnistMetadata = require('./fixtures/metadata/columnistMetadata');
 const columnistHasHeadshotMetadata = require('./fixtures/metadata/columnistHasHeadshotMetadata');
 const defaultMetadata = require('./fixtures/metadata/defaultMetadata');
@@ -34,6 +35,10 @@ describe('Branding', function () {
 
 	it('should return null if no brand or columnist is present', function() {
 		should.not.exist(getBranding(defaultMetadata));
+	});
+
+	it('should return null if there is more than one author', () => {
+		should.not.exist(getBranding(twoColumnistsMetadata))
 	});
 
 });
