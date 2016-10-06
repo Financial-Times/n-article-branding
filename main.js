@@ -8,8 +8,13 @@ function isABrand(metadata) {
 	return metadata.find(tag => tag.taxonomy === 'brand');
 }
 
+// COMPLEX: This will only return an author if there is one author, for articles with
+// more than one author don't pick one randomly because it might upset the other(s).
 function isAnAuthor(metadata) {
-	return metadata.find(tag => tag.taxonomy === 'authors');
+	const authors = metadata.filter(tag => tag.taxonomy === 'authors');
+	if (authors.length === 1) {
+		return authors[0];
+	}
 }
 
 function isGenreComment(metadata) {
