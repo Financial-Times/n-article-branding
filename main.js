@@ -26,7 +26,7 @@ function isGenreComment(metadata) {
 
 function headshotUrl(tag) {
 	const fileName = removeDiacritics(tag.prefLabel).toLowerCase().replace(/(\s|')+/g,'-');
-	return `https://next-geebee.ft.com/image/v1/images/raw/fthead:${fileName}`;
+	return `https://www.ft.com/__origami/service/image/v2/images/raw/fthead:${fileName}`;
 }
 
 module.exports = function (metadata) {
