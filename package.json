@@ -1,6 +1,6 @@
 {
   "name": "ft-n-article-branding",
-  "version": "3.0.7",
+  "version": "3.1.0",
   "main": "main.js",
   "dependencies": {
     "diacritics": "^1.2.3"
