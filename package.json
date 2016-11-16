@@ -1,6 +1,6 @@
 {
   "name": "ft-n-article-branding",
-  "version": "3.1.1",
+  "version": "0.0.0",
   "main": "main.js",
   "dependencies": {
     "diacritics": "^1.2.3"
@@ -9,6 +9,7 @@
     "chai": "^3.2.0",
     "eslint": "^2.10.2",
     "lintspaces-cli": "^0.1.1",
-    "mocha": "^2.2.5"
+    "mocha": "^2.2.5",
+    "npm-prepublish": "^1.2.2"
   }
 }
