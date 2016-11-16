@@ -17,15 +17,15 @@ const columnist = require('./fixtures/branding/columnist');
 const columnistHeadshot = require('./fixtures/branding/columnistHeadshot');
 
 describe('Branding', function () {
-	it('should set branding to the article brand if present', function() {
+	it('should set branding to the article brand if present', function () {
 		getBranding(brandMetadata).should.eql(brand);
 	});
 
-	it('should set branding to the article columnist if present', function() {
+	it('should set branding to the article columnist if present', function () {
 		getBranding(columnistMetadata).should.eql(columnist);
 	});
 
-	it('should set branding to the brand if both brand (not equal to author) and columnist are present', function() {
+	it('should set branding to the brand if both brand (not equal to author) and columnist are present', function () {
 		getBranding(brandAndColumnistMetadata).should.eql(brand);
 	});
 
@@ -33,7 +33,7 @@ describe('Branding', function () {
 		getBranding(columnistHasHeadshotMetadata).should.eql(columnistHeadshot);
 	});
 
-	it('should return null if no brand or columnist is present', function() {
+	it('should return null if no brand or columnist is present', function () {
 		should.not.exist(getBranding(defaultMetadata));
 	});
 
