@@ -4,7 +4,7 @@
   "taxonomy": "authors",
   "primary": "theme",
   "attributes": [
-    {"key": "hasHeadshot", "value": true}
+    {"key": "headshot", "value": "fthead:wolfgang-munchau-webb"}
   ],
   "headshot": "https://www.ft.com/__origami/service/image/v2/images/raw/fthead:wolfgang-munchau-webb"
 }

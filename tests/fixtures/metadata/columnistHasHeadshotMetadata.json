@@ -4,7 +4,7 @@
     "prefLabel": "Wolfgang Münchau Webb",
     "taxonomy": "authors",
     "primary": "theme",
-    "attributes": [ ]
+    "attributes": [ {"key": "headshot", "value": "fthead:wolfgang-munchau-webb"} ]
   },
   {
     "url": "/stream/genreId/OA==-R2VucmVz",

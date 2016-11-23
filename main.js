@@ -1,8 +1,7 @@
 /*eslint strict:0*/
 'use strict';
 
-const removeDiacritics = require('diacritics').remove;
-const checkForHeadshotAttribute = require('./mappings/headshot-mapping');
+const HEADSHOT_PREFIX = 'https://www.ft.com/__origami/service/image/v2/images/raw/';
 
 function isABrand (metadata) {
 	return metadata.find(tag => tag.taxonomy === 'brand');
@@ -24,9 +23,9 @@ function isGenreComment (metadata) {
 	);
 }
 
-function headshotUrl (tag) {
-	const fileName = removeDiacritics(tag.prefLabel).toLowerCase().replace(/(\s|')+/g,'-');
-	return `https://www.ft.com/__origami/service/image/v2/images/raw/fthead:${fileName}`;
+function getHeadshotFileName (tag) {
+	const headshot = tag.attributes && tag.attributes.find(attr => attr.key === 'headshot');
+	return headshot && headshot.value;
 }
 
 module.exports = function (metadata) {
@@ -37,14 +36,10 @@ module.exports = function (metadata) {
 		isGenreComment(metadata)
 	) {
 		matchedTag = isAnAuthor(metadata);
-		checkForHeadshotAttribute(matchedTag);
-	}
-	if (matchedTag &&
-			matchedTag.taxonomy === 'authors' &&
-			matchedTag.attributes &&
-			matchedTag.attributes.find(attribute => attribute.key === 'hasHeadshot')
-	) {
-		matchedTag.headshot = headshotUrl(matchedTag);
+		const headshotFileName = getHeadshotFileName(matchedTag);
+		if (headshotFileName) {
+			matchedTag.headshot = HEADSHOT_PREFIX + headshotFileName;
+		}
 	}
 	return matchedTag || null;
 };
