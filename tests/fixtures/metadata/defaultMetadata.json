@@ -1,29 +1,47 @@
 [
-  {
-    "id": "Nw==-R2VucmVz",
-    "name": "News",
-    "url": "/stream/genreId/Nw==-R2VucmVz",
-    "idV1": "Nw==-R2VucmVz",
-    "prefLabel": "News",
-    "taxonomy": "genre",
-    "attributes": []
-  },
-  {
-    "id": "Q0ItMDAwMDMyNQ==-QXV0aG9ycw==",
-    "name": "James Shotter",
-    "url": "/stream/authorsId/Q0ItMDAwMDMyNQ==-QXV0aG9ycw==",
-    "idV1": "Q0ItMDAwMDMyNQ==-QXV0aG9ycw==",
-    "prefLabel": "James Shotter",
-    "taxonomy": "authors",
-    "attributes": []
-  },
-  {
-    "id": "Q0ItMDAwMTIyNw==-QXV0aG9ycw==",
-    "name": "Jennifer Thompson",
-    "url": "/stream/authorsId/Q0ItMDAwMTIyNw==-QXV0aG9ycw==",
-    "idV1": "Q0ItMDAwMTIyNw==-QXV0aG9ycw==",
-    "prefLabel": "Jennifer Thompson",
-    "taxonomy": "authors",
-    "attributes": []
-  }
+	{
+		"predicate": "http://www.ft.com/ontology/classification/isClassifiedBy",
+		"id": "8a9d1cd8-f4da-38d6-a4eb-195d6a41d902",
+		"apiUrl": "http://api.ft.com/things/8a9d1cd8-f4da-38d6-a4eb-195d6a41d902",
+		"types": [
+			"http://www.ft.com/ontology/core/Thing",
+			"http://www.ft.com/ontology/concept/Concept",
+			"http://www.ft.com/ontology/classification/Classification",
+			"http://www.ft.com/ontology/Section"
+		],
+		"prefLabel": "US & Canadian Companies",
+		"type": "SECTION",
+		"directType": "http://www.ft.com/ontology/Section",
+		"url": "https://www.ft.com/stream/8a9d1cd8-f4da-38d6-a4eb-195d6a41d902"
+	},
+	{
+		"predicate": "http://www.ft.com/ontology/annotation/hasAuthor",
+		"id": "78e6b70c-8aba-3063-94c0-0d6772f52d27",
+		"apiUrl": "http://api.ft.com/people/78e6b70c-8aba-3063-94c0-0d6772f52d27",
+		"types": [
+		"http://www.ft.com/ontology/core/Thing",
+		"http://www.ft.com/ontology/concept/Concept",
+		"http://www.ft.com/ontology/person/Person"
+		],
+		"prefLabel": "John Gapper",
+		"type": "PERSON",
+		"directType": "http://www.ft.com/ontology/person/Person",
+		"url": "https://www.ft.com/stream/78e6b70c-8aba-3063-94c0-0d6772f52d27",
+		"attributes": [
+		]
+	},
+	{
+		"predicate": "http://www.ft.com/ontology/annotation/hasAuthor",
+		"id": "4ec8df74-d578-3bae-ae41-6874228c2f5e",
+		"apiUrl": "http://api.ft.com/people/4ec8df74-d578-3bae-ae41-6874228c2f5e",
+		"types": [
+		"http://www.ft.com/ontology/core/Thing",
+		"http://www.ft.com/ontology/concept/Concept",
+		"http://www.ft.com/ontology/person/Person"
+		],
+		"prefLabel": "Ingram Pinn",
+		"type": "PERSON",
+		"directType": "http://www.ft.com/ontology/person/Person",
+		"url": "https://www.ft.com/stream/4ec8df74-d578-3bae-ae41-6874228c2f5e"
+	}
 ]

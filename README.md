@@ -1,8 +1,8 @@
 # n-article-branding [![Circle CI](https://circleci.com/gh/Financial-Times/n-article-branding/tree/master.svg?style=svg)](https://circleci.com/gh/Financial-Times/n-article-branding/tree/master)
 
-v2 and upwards is based on V3 ES article metadata.
+v2 and upwards is based on V3 ES article annotations.
 
-Returns metadata tag that is corresponds to the brand according to these rules;
+Returns an annotation that  corresponds to the brand according to these rules;
 
 1. Brand, if;
   - has a brand tag
