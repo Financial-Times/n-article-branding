@@ -29,17 +29,18 @@ function getHeadshotFileName (tag) {
 }
 
 module.exports = function (annotations) {
-	let matchedTag = isABrand(annotations);
-	if (
-		!matchedTag &&
-		isAnAuthor(annotations) &&
-		isGenreComment(annotations)
-	) {
-		matchedTag = isAnAuthor(annotations);
-		const headshotFileName = getHeadshotFileName(matchedTag);
+	let tag = isABrand(annotations);
+	const author = isAnAuthor(annotations);
+	if (author && isGenreComment(annotations)) {
+		const headshotFileName = getHeadshotFileName(author);
+		if (!tag) {
+			tag = author;
+		}
+
 		if (headshotFileName) {
-			matchedTag.headshot = HEADSHOT_PREFIX + headshotFileName;
+			tag.headshot = HEADSHOT_PREFIX + headshotFileName;
+			tag.headshotAltText = `picture of the author ${author.prefLabel}`;
 		}
 	}
-	return matchedTag || null;
+	return tag || null;
 };
