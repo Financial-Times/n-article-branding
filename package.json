@@ -6,24 +6,18 @@
     "diacritics": "^1.2.3"
   },
   "devDependencies": {
-    "@financial-times/n-gage": "^1.1.8",
+    "@financial-times/n-gage": "^1.16.0",
     "chai": "^3.2.0",
     "eslint": "^2.10.2",
     "lintspaces-cli": "^0.1.1",
     "mocha": "^2.2.5",
     "npm-prepublish": "^1.2.2"
   },
-  "config": {
-    "pre-git": {
-      "commit-msg": "simple",
-      "pre-commit": [],
-      "pre-push": [],
-      "post-commit": [],
-      "post-checkout": [],
-      "post-merge": []
-    }
-  },
+  "config": {},
   "scripts": {
-    "commit": "commit-wizard"
+    "commit": "commit-wizard",
+    "precommit": "node_modules/.bin/secret-squirrel",
+    "commitmsg": "node_modules/.bin/secret-squirrel-commitmsg",
+    "prepush": "make verify -j3"
   }
 }

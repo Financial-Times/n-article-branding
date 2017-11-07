@@ -19,7 +19,7 @@ function isAnAuthor (annotations) {
 function isGenreComment (annotations) {
 	return annotations.find(annotation =>
 		annotation.types && annotation.types.includes('http://www.ft.com/ontology/Genre') &&
-		annotation.prefLabel === 'Comment'
+		annotation.id === 'e569e23b-0c3e-3d20-8ed0-4c17b8177c05'
 	);
 }
 

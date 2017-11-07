@@ -38,7 +38,7 @@ describe('Branding', function () {
 	});
 
 	it('should return null if there is more than one author', () => {
-		should.not.exist(getBranding(twoColumnistsMetadata))
+		should.not.exist(getBranding(twoColumnistsMetadata));
 	});
 
 });
