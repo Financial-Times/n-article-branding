@@ -1,32 +1,32 @@
 [
-	{
-		"predicate": "http://www.ft.com/ontology/classification/isClassifiedBy",
-		"id": "a36412f5-586c-364a-95ab-c7a0ef843658",
-		"apiUrl": "http://api.ft.com/brands/a36412f5-586c-364a-95ab-c7a0ef843658",
-		"types": [
-		"http://www.ft.com/ontology/core/Thing",
-		"http://www.ft.com/ontology/concept/Concept",
-		"http://www.ft.com/ontology/classification/Classification",
-		"http://www.ft.com/ontology/product/Brand"
-		],
-		"prefLabel": "Lombard",
-		"type": "BRAND",
-		"directType": "http://www.ft.com/ontology/product/Brand",
-		"url": "https://www.ft.com/stream/a36412f5-586c-364a-95ab-c7a0ef843658"
-	},
-	{
-		"predicate": "http://www.ft.com/ontology/classification/isClassifiedBy",
-		"id": "e569e23b-0c3e-3d20-8ed0-4c17b8177c05",
-		"apiUrl": "http://api.ft.com/things/e569e23b-0c3e-3d20-8ed0-4c17b8177c05",
-		"types": [
-		"http://www.ft.com/ontology/core/Thing",
-		"http://www.ft.com/ontology/concept/Concept",
-		"http://www.ft.com/ontology/classification/Classification",
-		"http://www.ft.com/ontology/Genre"
-		],
-		"prefLabel": "Comment",
-		"type": "GENRE",
-		"directType": "http://www.ft.com/ontology/Genre",
-		"url": "https://www.ft.com/stream/e569e23b-0c3e-3d20-8ed0-4c17b8177c05"
-	}
+    {
+        "predicate": "http://www.ft.com/ontology/classification/isClassifiedBy",
+        "id": "a36412f5-586c-364a-95ab-c7a0ef843658",
+        "apiUrl": "http://api.ft.com/brands/a36412f5-586c-364a-95ab-c7a0ef843658",
+        "types": [
+        "http://www.ft.com/ontology/core/Thing",
+        "http://www.ft.com/ontology/concept/Concept",
+        "http://www.ft.com/ontology/classification/Classification",
+        "http://www.ft.com/ontology/product/Brand"
+        ],
+        "prefLabel": "Lombard",
+        "type": "BRAND",
+        "directType": "http://www.ft.com/ontology/product/Brand",
+        "url": "https://www.ft.com/stream/a36412f5-586c-364a-95ab-c7a0ef843658"
+    },
+    {
+        "predicate": "http://www.ft.com/ontology/classification/isClassifiedBy",
+        "id": "e569e23b-0c3e-3d20-8ed0-4c17b8177c05",
+        "apiUrl": "http://api.ft.com/things/e569e23b-0c3e-3d20-8ed0-4c17b8177c05",
+        "types": [
+        "http://www.ft.com/ontology/core/Thing",
+        "http://www.ft.com/ontology/concept/Concept",
+        "http://www.ft.com/ontology/classification/Classification",
+        "http://www.ft.com/ontology/Genre"
+        ],
+        "prefLabel": "Comment",
+        "type": "GENRE",
+        "directType": "http://www.ft.com/ontology/Genre",
+        "url": "https://www.ft.com/stream/e569e23b-0c3e-3d20-8ed0-4c17b8177c05"
+    }
 ]

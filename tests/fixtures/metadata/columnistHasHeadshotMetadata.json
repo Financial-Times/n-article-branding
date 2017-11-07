@@ -1,37 +1,37 @@
 [
-	{
-		"predicate": "http://www.ft.com/ontology/classification/isClassifiedBy",
-		"id": "e569e23b-0c3e-3d20-8ed0-4c17b8177c05",
-		"apiUrl": "http://api.ft.com/things/e569e23b-0c3e-3d20-8ed0-4c17b8177c05",
-		"types": [
-		"http://www.ft.com/ontology/core/Thing",
-		"http://www.ft.com/ontology/concept/Concept",
-		"http://www.ft.com/ontology/classification/Classification",
-		"http://www.ft.com/ontology/Genre"
-		],
-		"prefLabel": "Comment",
-		"type": "GENRE",
-		"directType": "http://www.ft.com/ontology/Genre",
-		"url": "https://www.ft.com/stream/e569e23b-0c3e-3d20-8ed0-4c17b8177c05"
-	},
-	{
-		"predicate": "http://www.ft.com/ontology/annotation/hasAuthor",
-		"id": "78e6b70c-8aba-3063-94c0-0d6772f52d27",
-		"apiUrl": "http://api.ft.com/people/78e6b70c-8aba-3063-94c0-0d6772f52d27",
-		"types": [
-		"http://www.ft.com/ontology/core/Thing",
-		"http://www.ft.com/ontology/concept/Concept",
-		"http://www.ft.com/ontology/person/Person"
-		],
-		"prefLabel": "John Gapper",
-		"type": "PERSON",
-		"directType": "http://www.ft.com/ontology/person/Person",
-		"url": "https://www.ft.com/stream/78e6b70c-8aba-3063-94c0-0d6772f52d27",
-		"attributes": [
-		{
-			"key": "headshot",
-			"value": "fthead:john-gapper"
-		}
-		]
-	}
+    {
+        "predicate": "http://www.ft.com/ontology/classification/isClassifiedBy",
+        "id": "e569e23b-0c3e-3d20-8ed0-4c17b8177c05",
+        "apiUrl": "http://api.ft.com/things/e569e23b-0c3e-3d20-8ed0-4c17b8177c05",
+        "types": [
+        "http://www.ft.com/ontology/core/Thing",
+        "http://www.ft.com/ontology/concept/Concept",
+        "http://www.ft.com/ontology/classification/Classification",
+        "http://www.ft.com/ontology/Genre"
+        ],
+        "prefLabel": "Comment",
+        "type": "GENRE",
+        "directType": "http://www.ft.com/ontology/Genre",
+        "url": "https://www.ft.com/stream/e569e23b-0c3e-3d20-8ed0-4c17b8177c05"
+    },
+    {
+        "predicate": "http://www.ft.com/ontology/annotation/hasAuthor",
+        "id": "78e6b70c-8aba-3063-94c0-0d6772f52d27",
+        "apiUrl": "http://api.ft.com/people/78e6b70c-8aba-3063-94c0-0d6772f52d27",
+        "types": [
+        "http://www.ft.com/ontology/core/Thing",
+        "http://www.ft.com/ontology/concept/Concept",
+        "http://www.ft.com/ontology/person/Person"
+        ],
+        "prefLabel": "John Gapper",
+        "type": "PERSON",
+        "directType": "http://www.ft.com/ontology/person/Person",
+        "url": "https://www.ft.com/stream/78e6b70c-8aba-3063-94c0-0d6772f52d27",
+        "attributes": [
+        {
+            "key": "headshot",
+            "value": "fthead:john-gapper"
+        }
+        ]
+    }
 ]
